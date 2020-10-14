@@ -53,11 +53,11 @@ class structure {
      * addStructure function
      * Adds a structure responseName:metric pair in to the structure array.
      * @param string $metric
-     * @param array|string $responseName - This can be either an array of structure key pairs, or a single response name.
+     * @param array|string $responseName - This can be either an array of structure key pairs, or a single response name. If null then response name will be used.
      * @return void
      */
-    public function addStructure(string $responseName, $metric) {
-        return self::$structure[$responseName] = $metric;
+    public function addStructure(string $responseName, $metric=null) {
+        return self::$structure[$responseName] = (is_null($metric)) ? $responseName : $metric;
     }
 
     /**
@@ -79,7 +79,7 @@ class structure {
      * returns url encoded json array string on success.
      * @return string
      */
-    public function getStructureString() {
+    public static function getStructureString() {
         if(!empty(self::$structure)){
             return 'structure='.urlencode(json_encode(self::$structure));
         }

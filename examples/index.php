@@ -1,11 +1,10 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-$filters = new Api\Filter\filter;
-$filters->addFilter('testmetric', 'testvalue');
-$filters->addFilter('testmetric2', 'testvalue2');
-
-$structure = new Api\Structure\structure;
-$structure->addStructure('display1', 'metric1');
-$structure->addStructure('display2', ['subdisplay'=>'submetric']);
-echo $filters->getFilterString().'&'.$structure->getStructureString();
+echo <<<HTML
+<h1>Examples</h1>
+<p>The example(s) below are taken from the government documentation available at <a src="https://coronavirus.data.gov.uk/developers-guide" target="_new">https://coronavirus.data.gov.uk/developers-guide</a></p>
+<ul>
+    <li><a href="basic.php">Basic</a></li>
+</ul>
+HTML;

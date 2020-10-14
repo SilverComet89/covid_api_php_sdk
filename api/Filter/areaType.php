@@ -1,6 +1,6 @@
 <?php
 
-namespace Api\Filter\AreaType;
+namespace Api\Filter;
 
 class areaType {
     const AREA_TYPE_OVERVIEW = 'overview'; // Overview data for the United Kingdom

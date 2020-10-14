@@ -41,9 +41,9 @@ class filter {
      *
      * @return string
      */
-    public function getFilterString() {
+    public static function getFilterString() {
         if(!empty(self::$filters)){
-            return 'filter='.http_build_query(self::$filters,'',';');
+            return 'filters='.http_build_query(self::$filters,'',';');
         }
         
         throw new \Exception('There are no filters currently assigned.');
