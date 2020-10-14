@@ -1,10 +1,12 @@
 {
-    "name": "UK COVID-19 Api PHP SDK",
+    "name": "silvercomet89/covid-19_api_php_sdk",
     "description": "An unofficial SDK for connecting to the UK government API via PHP",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Api\\": "api/"
+            "Api\\": "api/",
+            "Api\\Filter\\": "api/Filter",
+            "Api\\Structure\\": "api/Structure"
         }
     }
 }
