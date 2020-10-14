@@ -2,6 +2,7 @@
     "name": "silvercomet89/covid-19_api_php_sdk",
     "description": "An unofficial SDK for connecting to the UK government API via PHP",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Api\\": "api/",
