@@ -39,14 +39,3 @@ $request = new Api\request;
 header('Content-Type: application/json');
 echo $request->make_request();
 ```
-
-## Limitations
-
-### Format
-Currently this SDK support JSON only.
-
-### Latest By
-Currently this SDK does not support the LatestBy parameter. This is a priority for me.
-
-### Pages
-Currently this SDK does not support the pages parameter. This is a priority for me.
