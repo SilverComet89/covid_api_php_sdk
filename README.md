@@ -6,7 +6,7 @@ https://coronavirus.data.gov.uk/developers-guide
 
 ## Installation
 
-To install via git use:
+To install via composer use:
 ```bash
 composer require silvercomet89/covid-19_api_php_sdk
 ```
