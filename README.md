@@ -36,6 +36,19 @@ $structure->addStructure(Api\Structure\structure::METRIC_CUM_DEATHS_28_DAYS_BY_D
 $request = new Api\request;
 
 // We set our content type here so we have a clear interface.
-header('Content-Type: application/json');
 echo $request->make_request();
+```
+
+## Format
+You can set the output format as JSON, CSV or XML. The default is JSON.
+```php
+$format = new Api\Format\format;
+$format->format(Api\Format\format::FORMAT_JSON);
+```
+
+## Pagination
+You can take advantage of the native pagination by passing the page number you are currently on. The request results give the link to the previous or next.
+```php
+$page = new Api\Page\page;
+$page->setPage(1);
 ```
