@@ -46,6 +46,8 @@ class structure {
     const METRIC_NEW_DEATHS_28_DAYS_BY_DEATH_DATE = 'newDeaths28DaysByDeathDate';
     const METRIC_CUM_DEATHS_28_DAYS_BY_DEATH_DATE = 'cumDeaths28DaysByDeathDate';
     const METRIC_CUM_DEATHS_28_DAYS_BY_DEATH_DATE_RATE = 'cumDeaths28DaysByDeathDate';
+    const METRIC_NEW_DEATHS_BY_DEATH_DATE = 'newDeathsByDeathDate';
+    const METRIC_CUM_DEATHS_BY_DEATH_DATE = 'cumDeathsByDeathDate';
 
     static $structure = [];
     
